@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+.App {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#quote-box {
+  text-align: center;
+  border-radius: 15px;
+  width: 50%;
+  margin: auto;
+  padding: 1.5em;
+  background-color: rgb(255, 255, 255);
+}
+
+.quote {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.author {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.button-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tweetButton:link {
+  margin-top: 30px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #333;
+  font-size: 0.85em;
+  padding: 8px 18px 6px 18px;
+  display:inline;
+}
+
+.tweetButton:visited {
+  color: #fff;
+}
+
+.button {
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  outline: none;
+  font-size: 0.85em;
+  padding: 8px 18px 6px 18px;
+  margin-top: 30px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.myLink:visited, .myLink:link{
+  position: relative;
+  top: 50px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .button-box {
+    flex-direction: column;
+  }
+
+  #quote-box {
+    width: 70%;
+  }
+
+  .button {
+    width: 150px;
+    margin: auto;
+  }
+
+  .tweetButton {
+    width: 114px;
+    margin: auto;
+    height: 24px;
+  }
+}
